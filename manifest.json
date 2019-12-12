@@ -1,0 +1,7 @@
+{ "manifest_version": 2,
+  "name": "Strong Password Generator",
+  "description": "In-browser strong password suggestor",
+  "version": "1",
+  "author": "Matt Fin",
+  "browser_action": {  "default_popup": "popup.html" }
+}

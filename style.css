@@ -1,0 +1,12 @@
+body {
+  min-width: 325px;
+}
+
+input {
+  font-family: 'Roboto Mono', monospace;
+}
+
+.input-group {
+  margin: auto;
+  padding: 10px;
+}
