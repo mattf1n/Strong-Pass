@@ -1,8 +1,8 @@
-function generate( length = 15 ){
+function generate2( length = 15 ){
 	var uppercase = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ';
   var lowercase = 'abcdefghijklmnopqrstuvwxyz';
   var numbers = '0123456789';
-  var symbols = '!"#$%&\'()*+,-./:;<=>?@^[\\]^_`{|}~';
+  var symbols = '!#$%&()*+,-./:;<=>?@^[]^_`{|}~';
 
   var all = uppercase + lowercase + numbers + symbols;
 
@@ -14,4 +14,14 @@ function generate( length = 15 ){
   }
 
   return password;
+}
+
+function generate(max = 15, min = 12)
+{
+    var passwordChars = "0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz#@!%&()/$:;?";
+    var randPwLen = Math.floor(Math.random() * (max - min + 1)) + min;
+    var randPassword = Array(randPwLen).fill(passwordChars).map(function(x) {
+			return x[Math.floor(Math.random() * x.length)]
+		}).join('');
+    return randPassword;
 }
