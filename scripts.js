@@ -17,7 +17,6 @@ window.onload = function (){
 function fillForm(password) {
   chrome.tabs.query({active: true, currentWindow: true}, function(tabs) {
     chrome.tabs.sendMessage(tabs[0].id, {data: password}, function(response) {
-      console.log('success');
     });
   });
 }
