@@ -1,12 +1,12 @@
 window.onload = function (){
   newPass()
 
-	var copyButton = document.getElementById("copy")
-	copyButton.onclick = function() {
-    var copyText = document.getElementById("password");
-    copyText.select();
-    document.execCommand("copy");
-	}
+	// var copyButton = document.getElementById("copy")
+	// copyButton.onclick = function() {
+  //   var copyText = document.getElementById("password");
+  //   copyText.select();
+  //   document.execCommand("copy");
+	// }
 
 	var newButton = document.getElementById("new")
 	newButton.onclick = function() {
